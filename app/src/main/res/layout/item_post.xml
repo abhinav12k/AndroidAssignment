@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Beatus coniecto corroboro apostolus avaritia barba clibanus consequuntur totus." />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Catena cometes voluptas. Acerbitas amplitudo adaugeo. Stillicidium casus sint. Demoror quas theatrum. Subnecto corrigo vir. Tergo substantia vita. Aliquam eius attonbitus. Qui dolorum cogito. Consequatur quidem aut. Verbera super crinis. Censura demo creator. Vitium thesaurus amplexus. Creo qui sub. Sopor terror sunt. Ulciscor thermae despecto. Suscipit acceptus virtus. Thalassinus suus cariosus. Totidem ambitus in. Coniecto curtus vero. Ubi arcesso triginta. Colloco alii avaritia. Conspergo adimpleo adfero. Debilito amiculum adfero. Volo clementia deludo. Ullus coruscus arbustum. Ut vitae velut. Anser turpe arcesso. Statim sed candidus." />
+
+</LinearLayout>
