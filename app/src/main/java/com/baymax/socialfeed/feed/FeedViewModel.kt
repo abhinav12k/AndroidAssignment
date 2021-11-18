@@ -1,5 +1,6 @@
 package com.baymax.socialfeed.feed
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.baymax.socialfeed.data.entity.PostData
@@ -54,6 +55,7 @@ class FeedViewModel @Inject constructor(
 
     private fun filterFeedToPostData(postResponse: PostResponse): List<PostData> {
         val posts = ArrayList<PostData>()
+        Log.d("Flow Posts", postResponse.data.toString())
         for(data in postResponse.data){
             posts.add(data.toPostData())
         }

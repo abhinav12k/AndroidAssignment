@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         val postAdapter = PostAdapter()
         binding.rvPosts.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        binding.rvPosts.adapter = postAdapter
 
         //fetch feed
         viewModel.getFeed()

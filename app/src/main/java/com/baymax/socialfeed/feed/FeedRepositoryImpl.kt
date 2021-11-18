@@ -20,7 +20,8 @@ class FeedRepositoryImpl @Inject constructor(
             if(response.isSuccessful && result!=null){
                 Resource.Success(result)
             }else{
-                Log.d("Flow Repo","Failure!!!")
+//                Log.d("Flow Repo","Message ${response.message()} ${response.code()} ${response.raw()}")
+//                Log.d("Flow Repo","Failure!!!")
                 Resource.Error(response.message())
             }
         }catch (e: Exception){

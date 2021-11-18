@@ -9,7 +9,11 @@ import retrofit2.http.GET
  */
 interface FeedApi {
 
-    @GET("/posts")
+    @GET("/public/v1/posts")
     suspend fun getPosts(): Response<PostResponse>
+
+    companion object {
+        const val BASE_URL = "https://gorest.co.in/"
+    }
 
 }
