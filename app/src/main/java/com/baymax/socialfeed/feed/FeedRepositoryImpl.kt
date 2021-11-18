@@ -1,5 +1,6 @@
 package com.baymax.socialfeed.feed
 
+import android.util.Log
 import com.baymax.socialfeed.data.FeedApi
 import com.baymax.socialfeed.data.models.PostResponse
 import com.baymax.socialfeed.util.Resource
@@ -19,6 +20,7 @@ class FeedRepositoryImpl @Inject constructor(
             if(response.isSuccessful && result!=null){
                 Resource.Success(result)
             }else{
+                Log.d("Flow Repo","Failure!!!")
                 Resource.Error(response.message())
             }
         }catch (e: Exception){
