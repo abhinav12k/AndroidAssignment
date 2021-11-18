@@ -1,6 +1,7 @@
 package com.baymax.socialfeed.data
 
 import com.baymax.socialfeed.data.models.PostResponse
+import retrofit2.Response
 import retrofit2.http.GET
 
 /**
@@ -9,6 +10,6 @@ import retrofit2.http.GET
 interface FeedApi {
 
     @GET("/posts")
-    suspend fun getPosts(): PostResponse
+    suspend fun getPosts(): Response<PostResponse>
 
 }
